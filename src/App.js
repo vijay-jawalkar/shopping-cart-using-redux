@@ -1,17 +1,13 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import { AllRoutes } from "./routes/AllRoutes";
-import { Header, Footer } from "./components";
-import { ScrollToTop } from "./components/ScrollToTop";
+import { Header } from "./components";
+import "./App.css";
 
- function App() {
+function App() {
   return (
-    <BrowserRouter >
-      <ScrollToTop />
+    <div className="App">
       <Header />
-      {<AllRoutes />}
-      <Footer />
-    </BrowserRouter>
+      <AllRoutes />
+    </div>
   );
 }
 
